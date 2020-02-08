@@ -68,3 +68,8 @@ export const environment = {
 
 - https://firestarter-96e46.firebaseapp.com/
 - https://github.com/codediodeio/angular-firestarter.git (clone)
+
+## More Firebase Links
+
+- https://angularfirebase.com/
+- https://github.com/AngularFirebase
