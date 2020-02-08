@@ -63,3 +63,8 @@ export const environment = {
 ## Cypress Video && Info
 
 - https://www.youtube.com/watch?v=7N63cMKosIE
+
+### Video Demo App Starter
+
+- https://firestarter-96e46.firebaseapp.com/
+- https://github.com/codediodeio/angular-firestarter.git (clone)
