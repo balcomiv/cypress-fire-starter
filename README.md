@@ -73,3 +73,15 @@ export const environment = {
 
 - https://angularfirebase.com/
 - https://github.com/AngularFirebase
+
+## Links for testing Cypress using pluralsight video
+
+- https://app.pluralsight.com/player?course=codemash-session-01&author=codemash-conference&name=15446364-f2cf-4e36-ba79-827bb40f32b7&clip=0&mode=live&start=985&noteid=88703ea9-9967-4543-bc11-9ce1084e1a2c
+
+- https://sitepoint-editors.github.io/todo-app/ (git hub pages site to test)
+
+- https://www.sitepoint.com/angular-2-tutorial/ (shows how to deploy to github)
+
+- https://github.com/sitepoint-editors/angular-todo-app/tree/part-1
+
+- https://ultimatecourses.com/blog/stateful-stateless-components (stateless missing manual)
