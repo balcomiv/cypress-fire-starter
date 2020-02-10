@@ -10,9 +10,19 @@ describe("Firestarter", () => {
   const email = "test-test@gmail.com";
   const password = "123456";
 
+  // This is not a best pracice (anit-pattern)
+  before(() => {
+    cy.login(email, password);
+  });
+
   beforeEach(() => {
     cy.visit("http://localhost:4200");
   });
+
+  // This is not a best pracice (anit-pattern)
+  //   after(() => {
+  //     cy.logout();
+  //   });
 
   it("has a title", () => {
     cy.contains("Angular Firestarter");
@@ -26,16 +36,20 @@ describe("Firestarter", () => {
       .should("contain", "You must be logged in!");
   });
 
-  it("signs up a new user", () => {
-    cy.get('[routerlink="/login"]:visible').click();
+  it.only("allows user to create notes", () => {
+    // Login with custom method
+    cy.login(email, password);
 
-    //  Assert URL
-    cy.url().should("include", "/login");
+    //
+    cy.pause();
+  });
 
-    //  Fill out Form
-    cy.get('input[formControlName="email"]').type(email);
-    cy.get('input[formControlName="password"]').type(password);
-    cy.get('input[formControlName="passwordConfirm"]').type(password);
-    cy.get('button[type="submit"]').click();
+  it("goes to login screen", () => {
+    // Get visible login
+    cy.get("a:visible")
+      .contains("Login")
+      .click();
+
+    cy.contains("Returning user?").click();
   });
 });
